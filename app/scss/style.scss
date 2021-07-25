@@ -361,3 +361,195 @@
 }
 
 //end author
+//start tutorial
+.tutorial{
+    padding: 70px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+.tutorial__item{
+    &-images{
+        min-height: 270px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
+    }
+    &-title{
+        @include f700;
+        font-size: 24px;
+        text-align: center;
+        color: $bg;
+        padding: 30px 10px;
+    }
+}
+
+//end  tutorial
+
+//start footer
+.footer{
+    background-color: $bg;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 80px;
+    }
+}
+.footer__col{
+    max-width: 270px;
+    width: 100%;
+    &-menu{
+        max-width: 220px;
+        
+    }
+    &-title{
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-weight: 700;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 51px;
+            height: 3px;
+            bottom: 0;
+            left: 2px;
+            background-color: $green;
+        }
+    }
+    &-text{
+        font-size: 15px;
+        color: #b7c3c8;
+    }
+}  
+.footer__info{
+    color: #fff;
+    margin-top: 18px;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        content: '\f041';
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+.footer__info-phone{
+    &::before{
+        content: '\f095';
+    }
+}
+.footer__col-list{
+    a{
+        margin-bottom: 15px;
+        color: #b7c3c8;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: '\f054';
+            font-family: 'icomoon';
+            color: $green;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            
+
+        }
+    }
+
+}
+.footer__copy{
+    border-top: 1px solid #424d53;
+}
+.footer__copy-text{
+    text-align: center;
+    font-size: 15px;
+    padding: 25px 0 30px;
+
+}
+.footer__social-link{
+    margin-bottom: 33px;
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 7px;
+        }
+    }
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/content/css_sprites.png);
+    }
+}
+.link-twitter{
+    background-position: -28px 0;
+}
+.link-youtube{
+    background-position: -56px 0;
+}
+.link-pinterest{
+    background-position: -84px 0;
+}
+.link-linkedlin{
+    background-position: -112px 0;
+}
+.footer__form-title{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.footer__form{
+    position: relative;
+    input{
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        color: #fff;
+        padding: 0 50px 0 13px;
+        &::placeholder{
+            color: #697378;    
+            
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        cursor: pointer;
+        &::before{
+            content: '\f124';
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 20px;
+            top: 10px;
+            right: 15px;
+        }
+
+    }
+}
+
+
+  
+  
+//end footer
